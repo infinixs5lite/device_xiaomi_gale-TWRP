@@ -38,11 +38,13 @@ $(call inherit-product, device/xiaomi/gale/device.mk)
 # Configure virtual_ab_ota.mk
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 
+# Device identifier
 PRODUCT_DEVICE := gale
 PRODUCT_NAME := twrp_gale
-PRODUCT_BRAND := redmi 13c
-PRODUCT_MODEL := gale
-PRODUCT_MANUFACTURER := xiaomi
+PRODUCT_BRAND := Xiaomi
+PRODUCT_MODEL := 23106RNODA
+PRODUCT_MANUFACTURER := Xiaomi
+PRODUCT_RELEASE_NAME := Xiaomi redmi 13c
 
 # Hide Reflash TWRP & FUSE passthrough
 PRODUCT_PROPERTY_OVERRIDES += \
