@@ -132,10 +132,6 @@ BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags
 # Treble
 BOARD_VNDK_VERSION := current
 
-# Init
-TARGET_INIT_VENDOR_LIB := libinit_gale
-TARGET_RECOVERY_DEVICE_MODULES := libinit_gale
-
 # TWRP Configuration
 TW_THEME := portrait_hdpi
 TW_EXTRA_LANGUAGES := true
