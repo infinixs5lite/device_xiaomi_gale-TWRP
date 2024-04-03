@@ -28,7 +28,7 @@ void vendor_load_properties()
         property_override(string("ro.product.") + prop + string("name"), "gale");
         property_override(string("ro.product.") + prop + string("device"), "gale");
         property_override(string("ro.product.") + prop + string("model"), "23106RNODA");
-        property_override(string("ro.product.") + prop + string("marketname"), "Xiaomi Redmi 13C");
+        property_override(string("ro.product.") + prop + string("marketname"), "redmi");
     }
     property_override("ro.bootimage.build.date.utc", "1709477783");
     property_override("ro.build.date.utc", "1709477783");
