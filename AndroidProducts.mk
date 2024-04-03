@@ -6,9 +6,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_gale.mk
+    $(LOCAL_DIR)/twrp_gale.mk
 
 COMMON_LUNCH_CHOICES := \
-    omni_gale-user \
-    omni_gale-userdebug \
-    omni_gale-eng
+    twrp_gale-eng
