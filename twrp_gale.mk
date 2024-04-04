@@ -15,7 +15,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 # Inherit some common TWRP stuff.
 $(call inherit-product, vendor/twrp/config/common.mk)
 
-# Inherit from fire device
+# Inherit from gale device
 $(call inherit-product, device/xiaomi/gale/device.mk)
 
 # Device identifier
