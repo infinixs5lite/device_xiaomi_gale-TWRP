@@ -147,6 +147,15 @@ TW_EXTRA_LANGUAGES := true
 TW_SCREEN_BLANK_ON_BOOT := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_USE_TOOLBOX := true
+TW_HAS_MTP := true
+
+# Support /data/media
+RECOVERY_SDCARD_ON_DATA := true
+
+# Statusbar
+TW_CUSTOM_CPU_POS := "290"
+TW_CUSTOM_CLOCK_POS := "60"
+TW_CUSTOM_BATTERY_POS := "780"
 
 # Fastbootd
 TW_INCLUDE_FASTBOOTD := true
