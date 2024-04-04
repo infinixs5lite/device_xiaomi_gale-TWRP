@@ -9,7 +9,6 @@ LOCAL_PATH := device/xiaomi/gale
 # A/B
 AB_OTA_UPDATER := true
 ENABLE_VIRTUAL_AB := true
-TARGET_ENFORCE_AB_OTA_PARTITION_LIST := true
 
 PRODUCT_PACKAGES += \
     update_engine \
@@ -29,18 +28,16 @@ AB_OTA_POSTINSTALL_CONFIG += \
     FILESYSTEM_TYPE_vendor=erofs \
     POSTINSTALL_OPTIONAL_vendor=true
 
-# Additional Target Libraries
+# Additional binaries & libraries needed for recovery
 TARGET_RECOVERY_DEVICE_MODULES += \
-    android.hardware.keymaster@4.1 \
-    android.hardware.vibrator-V1-ndk_platform \
-    libion \
-    libxml2
+    libkeymaster41 \
+    libkeymaster4 \
+    libpuresoftkeymasterdevice
 
-TW_RECOVERY_ADDITIONAL_RELINK_LIBRARY_FILES += \
-    $(TARGET_OUT_SHARED_LIBRARIES)/android.hardware.keymaster@4.1.so \
-    $(TARGET_OUT_SHARED_LIBRARIES)/android.hardware.vibrator-V1-ndk_platform.so \
-    $(TARGET_OUT_SHARED_LIBRARIES)/libion.so \
-    $(TARGET_OUT_SHARED_LIBRARIES)/libxml2.so
+RECOVERY_LIBRARY_SOURCE_FILES += \
+    $(TARGET_OUT_SHARED_LIBRARIES)/libkeymaster41.so \
+    $(TARGET_OUT_SHARED_LIBRARIES)/libkeymaster4.so \
+    $(TARGET_OUT_SHARED_LIBRARIES)/libpuresoftkeymasterdevice.so
 
 # Bootctrl
 PRODUCT_PACKAGES += \
@@ -78,5 +75,3 @@ PRODUCT_PACKAGES += \
 # Hidl Service
 PRODUCT_ENFORCE_VINTF_MANIFEST := true
 
-# Soong namespaces
-PRODUCT_SOONG_NAMESPACES += $(DEVICE_PATH)
