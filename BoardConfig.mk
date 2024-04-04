@@ -172,5 +172,22 @@ TW_INCLUDE_LPDUMP := true
 TW_INCLUDE_LPTOOLS := true
 TW_DEVICE_VERSION := By Nino 
 
+# SHRP Flags
+SHRP_MAINTAINER := Nino
+SHRP_DEVICE_CODE := gale
+SHRP_REC := /dev/block/sda26
+SHRP_PATH := device/xiaomi/gale
+SHRP_EDL_MODE := 0
+SHRP_INTERNAL := /data/media/0
+SHRP_OTG := /usb_otg
+SHRP_FLASH := 1
+SHRP_REC_TYPE := Treble
+SHRP_REC := /dev/block/bootdevice/by-name/recovery
+SHRP_DEVICE_TYPE := A/B
+SHRP_STATUSBAR_RIGHT_PADDING := 40
+SHRP_STATUSBAR_LEFT_PADDING := 40
+SHRP_EXPRESS := true
+SHRP_OFFICIAL := true
+
 # Haptics
 TW_SUPPORT_INPUT_1_2_HAPTICS := true
