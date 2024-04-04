@@ -27,7 +27,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_ven
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
 # Configure twrp config common.mk
-$(call inherit-product, vendor/twrp/config/common.mk)
+$(call inherit-product, vendor/pb/config/common.mk)
 
 # Configure compression
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/compression.mk)
@@ -40,7 +40,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 
 # Device identifier
 PRODUCT_DEVICE := gale
-PRODUCT_NAME := twrp_gale
+PRODUCT_NAME := omni_gale
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := 23106RNODA
 PRODUCT_MANUFACTURER := Xiaomi
